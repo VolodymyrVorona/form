@@ -1,9 +1,17 @@
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
-  );
-}
+import React, { Component } from 'react';
+import Form from './components/Form';
 
-export default App;
+export default class App extends Component {
+  formSubmitHandler = data => {
+    setTimeout(() => {
+      console.log(data);
+    }, 1000);
+  };
+  render() {
+    return (
+      <div>
+        <Form onSubmit={this.formSubmitHandler} />
+      </div>
+    );
+  }
+}
