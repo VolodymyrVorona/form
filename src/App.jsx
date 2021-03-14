@@ -6,7 +6,6 @@ export default class App extends Component {
     setTimeout(() => {
       console.log(data);
     }, 1000);
-
   };
 
   render() {
